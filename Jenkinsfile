@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("aion-Ross/hellonode")
+        app = docker.build("aionross/hellonode")
     }
 
     stage('Test image') {
