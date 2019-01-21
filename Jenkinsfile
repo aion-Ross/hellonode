@@ -2,7 +2,7 @@ node {
     def app
     def project = 'trusty-drive-228822'
     def appName = 'hellonode'
-    def imageTag = "gcr.io/${project}/${appName}:${env.BUILD_NUMBER}.latest"
+    def imageTag = "gcr.io/${project}/${appName}:${env.BUILD_NUMBER}"
     
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
