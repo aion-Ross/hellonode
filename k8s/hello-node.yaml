@@ -19,4 +19,4 @@ spec:
         imagePullPolicy: Always
         ports:
           name:hello-node
-          containerPort: 8080
+          containerPort:8080
