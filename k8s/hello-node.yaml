@@ -21,4 +21,6 @@ spec:
               name: hello-node
           resources: 
             limits: 
-              memory: 500Mi
+              memory: 2Gi
+            requests:
+              memory: 2Gi
