@@ -11,12 +11,12 @@ spec:
         app: hello-node
     spec:
       containers:
-      - name: backend
+      - name: hello-node
         image: gcr.io/trusty-drive-228822/hellonode:1.0.0
         resources:
           limits:
             memory: "500Mi"
         imagePullPolicy: Always
         ports:
-        - name:test
+        - name:hello-node
           containerPort: 8080
