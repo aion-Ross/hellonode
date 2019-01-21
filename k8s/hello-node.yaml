@@ -18,5 +18,5 @@ spec:
             memory: "500Mi"
         imagePullPolicy: Always
         ports:
-        - name:hello-node
-        - containerPort: 8080
+          name:hello-node
+          containerPort: 8080
