@@ -9,6 +9,7 @@ spec:
       labels: 
         app: hello-node
       name: hello-node
+    progressDeadlineSeconds: 30
     spec: 
       containers: 
         - 
