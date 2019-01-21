@@ -1,22 +1,24 @@
-kind: Deployment
 apiVersion: extensions/v1beta1
-metadata:
+kind: Deployment
+metadata: 
   name: hello-node
-spec:
+spec: 
   replicas: 1
-  template:
-    metadata:
-      name: hello-node
-      labels:
+  template: 
+    metadata: 
+      labels: 
         app: hello-node
-    spec:
-      containers:
-      - name: hello-node
-        image: gcr.io/trusty-drive-228822/hellonode:1.0.0
-        resources:
-          limits:
-            memory: "500Mi"
-        imagePullPolicy: Always
-        ports:
-          name:hello-node
-          containerPort:8080
+      name: hello-node
+    spec: 
+      containers: 
+        - 
+          image: "gcr.io/trusty-drive-228822/hellonode:1.0.0"
+          imagePullPolicy: Always
+          name: backend
+          ports: 
+            - 
+              containerPort: 8080
+              name: hello-node
+          resources: 
+            limits: 
+              memory: 500Mi
