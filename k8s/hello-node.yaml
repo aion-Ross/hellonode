@@ -9,7 +9,6 @@ spec:
       labels: 
         app: hello-node
       name: hello-node
-    progressDeadlineSeconds: 30
     spec: 
       containers: 
         - 
@@ -25,3 +24,5 @@ spec:
               memory: 2Gi
             requests:
               memory: 2Gi
+          progressDeadlineSeconds: 30
+
