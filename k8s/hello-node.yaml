@@ -24,5 +24,5 @@ spec:
               memory: 2Gi
             requests:
               memory: 2Gi
-          progressDeadlineSeconds: 30
+      progressDeadlineSeconds: 30
 
