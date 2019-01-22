@@ -4,6 +4,7 @@ metadata:
   name: hello-node
 spec: 
   replicas: 1
+  progressDeadlineSeconds: 30
   template: 
     metadata: 
       labels: 
@@ -24,5 +25,5 @@ spec:
               memory: 2Gi
             requests:
               memory: 2Gi
-      progressDeadlineSeconds: 30
+      
 
